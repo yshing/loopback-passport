@@ -1,0 +1,39 @@
+{
+  "name": "loopback-passport-bridge",
+  "version": "0.0.0",
+  "description": "LoopBack passport integration",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha -R spec --timeout 10000 test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yshing/loopback-passport.git"
+  },
+  "keywords": [
+    "loopback",
+    "social",
+    "login",
+    "passport"
+  ],
+  "author": "yShing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yshing/loopback-passport/issues"
+  },
+  "homepage": "https://github.com/yshing/loopback-passport#readme",
+  "dependencies": {
+    "loopback-datasource-juggler": "^2.36.0",
+    "parent-require": "^1.0.0",
+    "passport": "^0.2.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "loopback": "^2.21.0"
+  },
+  "peerDependencies": {
+    "loopback": "^2.21.0",
+    "passport": "^0.2.1",
+    "passport-local": "1.0.0"
+  }
+}

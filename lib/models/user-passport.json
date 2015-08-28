@@ -1,0 +1,44 @@
+{
+  "name": "UserPassport",
+  "base": "PersistedModel",
+  "properties": {
+    "username":"String",
+    "email":"String",
+    "provider": {
+      "type": "String",
+      "comments": "Name of the AuthProvider e.g. local, facebook etc."
+    },
+    "externalId": {
+      "type": "String",
+      "comments": "The provider specific id"
+    },
+    "profile": {
+      "type": "Object"
+    },
+    "credentials": {
+      "type": "Object"
+    },
+    "created": "Date",
+    "modified": "Date",
+    "active":{
+      "type":"Boolean",
+      "default":true
+    }
+  },
+  "acls": [{
+    "principalType": "ROLE",
+    "principalId": "$everyone",
+    "permission": "DENY"
+  }, {
+    "principalType": "ROLE",
+    "principalId": "$owner",
+    "permission": "ALLOW"
+  }],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "userId"
+    }
+  }
+}

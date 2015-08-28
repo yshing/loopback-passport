@@ -1,0 +1,8 @@
+{
+  "name": "AuthProvider",
+  "base": "Model",
+  "properties": {
+  },
+  "relations": {
+  }
+}
