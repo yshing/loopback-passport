@@ -14,8 +14,5 @@ describe('AuthProvider', function () {
 		assert(Array.isArray(AuthProvider.list()),'return a Array');
 		console.log(AuthProvider.list());
 		done();
-
-		
 	});
-	
 });

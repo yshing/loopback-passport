@@ -1,6 +1,6 @@
 {
   "name": "loopback-passport-bridge",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "LoopBack passport integration",
   "main": "./lib/index.js",
   "scripts": {
@@ -23,13 +23,16 @@
   },
   "homepage": "https://github.com/yshing/loopback-passport#readme",
   "dependencies": {
+    "debug": "^2.2.0",
     "loopback-datasource-juggler": "^2.36.0",
     "parent-require": "^1.0.0",
     "passport": "^0.2.2",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "loopback": "^2.21.0"
+    "loopback": "^2.21.0",
+    "passport": "^0.2.1",
+    "passport-local": "1.0.0"
   },
   "peerDependencies": {
     "loopback": "^2.21.0",
